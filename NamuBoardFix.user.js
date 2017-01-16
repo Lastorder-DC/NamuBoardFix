@@ -3,7 +3,7 @@
 // @namespace    http://lastorder.xyz
 // @version      0.1
 // @downloadURL  https://raw.githubusercontent.com/Lastorder-DC/NamuBoardFix/master/NamuBoardFix.user.js
-// @description  Change board.namu.wiki time to GMT+9
+// @description  Change board.namu.wiki time to Local Timezone
 // @author       Lastorder-DC
 // @match        https://board.namu.wiki/*
 // @require      https://cdn.rawgit.com/moment/moment/2.17.1/min/moment.min.js
