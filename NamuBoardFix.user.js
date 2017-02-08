@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NamuBoardFix
 // @namespace    http://lastorder.xyz
-// @version      0.1.1
+// @version      0.1.2
 // @downloadURL  https://raw.githubusercontent.com/Lastorder-DC/NamuBoardFix/master/NamuBoardFix.user.js
 // @description  Change board.namu.wiki time to Local Timezone
 // @author       Lastorder-DC
@@ -18,7 +18,6 @@
         jQuery('.time').each(function(index){
             var orgTime = jQuery(this).text();
             if(orgTime.indexOf(":") != -1) {
-                var date = new Date(jQuery(this).text() + 'UTC');
                 var m = moment(jQuery(this).text() + "Z", "YYYY.MM.DD HH:mmZ");
                 jQuery(this).text(m.format("YYYY.MM.DD HH:mm"));
             }
